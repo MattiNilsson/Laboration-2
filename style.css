@@ -1,0 +1,54 @@
+*{
+
+    margin: auto;
+
+}
+
+header{
+
+    display:flex;
+    width: 100%;
+    background-color: gray;
+    height: 100px;
+    
+
+}
+
+h1{
+
+    
+    flex:1;
+    text-align: center;
+
+}
+
+.links{
+
+    flex:1;
+
+}
+
+.pushblock{
+
+    flex:4;
+
+}
+
+@media(max-width: 700px){
+
+.links{
+
+    display:none;
+    flex:0;
+
+}
+
+.pushblock{
+
+    display: none;
+    flex:0;
+
+}
+
+
+}
