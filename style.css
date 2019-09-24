@@ -1,19 +1,14 @@
-*{
-
+* {
     margin: auto;
     font-family: 'Anton', sans-serif;
-
 }
 
-body{
-
+body {
     background-image: url(TestBg3.png);
     background-repeat: repeat;
-
 }
 
-header{
-
+header {
     display:flex;
     position:fixed;
     top:0;
@@ -21,104 +16,72 @@ header{
     background-color: rgb(76, 146, 155);
     height: 100px;
     -webkit-box-shadow: 1px 20px 23px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 20px 23px 0px rgba(0,0,0,0.75);
-box-shadow: 1px 20px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 20px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 20px 23px 0px rgba(0,0,0,0.75);
     z-index: 2;
-    
-
 }
 
-h1{
-
-    
+h1 {
     flex:1;
     text-align: center;
     color:white;
     text-shadow: 4px 4px rgb(46, 46, 46);
-
 }
 
-a{
-
+a {
     margin-left: 20px;
     color: white;
     text-decoration: none;
-
 }
 
-a:hover{
-
+a:hover {
     margin-left: 20px;
     color: rgb(68, 68, 68);
     text-decoration: Underline;
-
 }
 
-.links{
-
+.links {
     flex:1;
-    
-
 }
 
-.pushblock{
-
+.pushblock {
     flex:4;
-
 }
 
-.images{
-
+.images {
     margin-top: 100px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
-.images > img{
-
+.images > img {
     flex: 1;
     width: 100%;
     min-width: 150px;
     margin: 30px;
     -webkit-box-shadow: 1px 20px 23px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 20px 23px 0px rgba(0,0,0,0.75);
-box-shadow: 1px 20px 23px 0px rgba(0,0,0,0.75);
-    
-
+    -moz-box-shadow: 1px 20px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 20px 23px 0px rgba(0,0,0,0.75);
 }
 
-.images > img:hover{
-
+.images > img:hover {
     filter: brightness(150%);
-    
-
 }
 
-.images > img:active{
-
+.images > img:active {
     filter: brightness(50%);
-    
-
 }
 
-@media(max-width: 700px){
+@media(max-width: 700px) {
+    .links {
+        display:none;
+        flex:0;
+    }
 
-.links{
-
-    display:none;
-    flex:0;
-
-}
-
-.pushblock{
-
-    display: none;
-    flex:0;
-
-}
-
-
+    .pushblock {
+        display: none;
+        flex:0;
+    }
 }
